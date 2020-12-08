@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #dfdfdf;
+    background-color: #444444;
+}
+
+/* Images */
+
+.first {
+    background-image: url(./img/IMG1234.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.second {
+    background-image: url(./img/IMG1235.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.third {
+    background-image: url(./img/IMG1236.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.fourth {
+    background-image: url(./img/IMG1237.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.fifth {
+    background-image: url(./img/IMG1238.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.sixth {
+    background-image: url(./img/IMG1239.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.seventh {
+    background-image: url(./img/IMG1240.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.item-img {
+    display: flex;
+    position: relative;
+    border: 1px solid #b4b4b4;
+    border-radius: 1px;
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.item-img:hover {
+    transform: scale(1.025);
+}
+.item-text p {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0.5;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: 200px;
+    padding: 20px 20px 0px 20px;
+    background-color: #5e5e5e;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 20px 10px 0px 10px;
+    transition: 0.5s;
+}
+.item:hover {
+    background-color: #9c9c9c;
+}
+
+.dots-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots-color .dot:nth-child(1):hover {
+    background-color: red;
+}
+.dots-color .dot:nth-child(2):hover {
+    background-color: yellow;
+}
+.dots-color .dot:nth-child(3):hover {
+    background-color: green;
+}
+.star .dot:hover,
+.star .dot:hover ~ .dot {
+    background-color: #dfdfdf;
+}
+
+.star .dot:checked,
+.star .dot:checked ~ .dot {
+    background-color: #dfdfdf;
+}
+
+.item-dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.dots-color .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #dfdfdf;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px 2px 4px 2px;
+    transition: 0.3s;
+}
+
+.star .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #444444;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px 2px 4px 2px;
+    transition: 0.3s;
+}
+
+.fullscreen-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px 40px 100px;
+    position: absolute;
+    top: 0px;
+}
+
+.fullscreen-image img {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0px 0px 20px 5px #000000; 
+    box-shadow: 0px 0px 20px 5px #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.dot-active-red {
+    background-color: red !important;
+}
+.dot-active-yellow {
+    background-color: yellow !important;
+}
+.dot-active-green {
+    background-color: green !important;
+}
+
+.star input { 
+    display:none;
+}
+
+.star label { 
+    width: 15px;
+    height: 15px;
+    background: #444444;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px 2px 4px 2px;
+    transition: 0.3s;
+}
+
+.star label:hover,
+.star label:hover ~ label {
+    background: #dfdfdf;
+}
+
+.star input:checked ~ label{
+    background: #dfdfdf;
+  }
